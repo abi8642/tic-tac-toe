@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <!-- modal -->
+    <div class="modal">
+        <div class="modal-box">
+            <span class="closeBtn">&times;</span>
+            <h2 id="p"> </h2>
+            <label>
+                <p>Enter Your Name</p>
+                <input type="text" id="pname">
+            </label>
+            <span id="errname" class="err"></span>
+            <label>
+                <p>Select Your Luck</p>
+                <button id="iconBtn1"><i class="far fa-circle luckIcon change" id="icon1"></i></button>
+                <button id="iconBtn2"><i class="fas fa-times luckIcon" id="icon2"></i></button>
+            </label>
+            <span id="erricon" class="err"></span>
+            <button type="button" class="gstart">Start</button>
+        </div>
+    </div>
+
+    <!-- main box -->
+    <div class="main">
+        <div class="main-heading">
+            <h1>Welcome To The World Of <span id="title">TIC TAC TOE</span></h1>
+        </div>
+
+        <div class="player-box">
+            <div class="player" id="playerOne">
+                <span id="p1ready" class="ready"></span>
+                <h3>Player 1</h3>
+                <span id="player1name" class="playername"></span>
+                <button type="button" id="p1btn" class="playerBtn">Go</button>
+            </div>
+
+            <div class="player" id="playerTwo">
+                <span id="p2ready" class="ready"></span>
+                <h3>Player 2</h3>
+                <span id="player2name" class="playername"></span>
+                <button type="button" id="p2btn" class="playerBtn">Go</button>
+            </div>
+        </div>
+
+        <div id="gameWait"></div>
+        <div id="gameStartTime"></div>
+    </div>
+
+    <!-- tic tac toe game -->
+    <div id="tic">
+        <div id="tac">
+            <div class="rank">
+                <div class="tac-rank-name"><span id="tac-rank-name1"></span> (<i id="tac-rank-name-icon1"
+                        class="tac-rank-name-icon"></i>)</div>
+                <div id="tac-rank-result1" class="tac-rank-result">0</div>
+            </div>
+            <div class="rank">
+                <div class="tac-rank-name">Tie</div>
+                <div id="tac-rank-result3" class="tac-rank-result">0</div>
+            </div>
+            <div class="rank">
+                <div class="tac-rank-name"><span id="tac-rank-name2"></span> (<i id="tac-rank-name-icon2"
+                        class="tac-rank-name-icon"></i>)</div>
+                <div id="tac-rank-result2" class="tac-rank-result">0</div>
+            </div>
+        </div>
+        <div id="toe">
+            <button id="toe-box1" class="toe-boxs"><i id="toe-box-icon1" class="toe-box-icon"></i></button>
+            <button id="toe-box2" class="toe-boxs"><i id="toe-box-icon2" class="toe-box-icon"></i></button>
+            <button id="toe-box3" class="toe-boxs"><i id="toe-box-icon3" class="toe-box-icon"></i></button>
+            <button id="toe-box4" class="toe-boxs"><i id="toe-box-icon4" class="toe-box-icon"></i></button>
+            <button id="toe-box5" class="toe-boxs"><i id="toe-box-icon5" class="toe-box-icon"></i></button>
+            <button id="toe-box6" class="toe-boxs"><i id="toe-box-icon6" class="toe-box-icon"></i></button>
+            <button id="toe-box7" class="toe-boxs"><i id="toe-box-icon7" class="toe-box-icon"></i></button>
+            <button id="toe-box8" class="toe-boxs"><i id="toe-box-icon8" class="toe-box-icon"></i></button>
+            <button id="toe-box9" class="toe-boxs"><i id="toe-box-icon9" class="toe-box-icon"></i></button>
+        </div>
+
+        <button id="playagainBtn">Play Again</button>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
